@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingTop="10dp"
+        android:text="@string/twist_for_fingers"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="40dp" />
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:scrollbars="horizontal"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="5dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:layout_above="@+id/button4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="@string/touch_tile"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player1"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player2"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:id="@+id/button4"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
